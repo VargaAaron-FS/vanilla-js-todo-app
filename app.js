@@ -43,10 +43,12 @@ const checkTodo = (e) => {
   let item = e.target.parentNode;
   if (item.style.textDecoration === "line-through") {
     item.style.textDecoration = "none";
+    item.style.color = "#000";
     item.style.fontStyle = "normal";
   } else {
     item.style.textDecoration = "line-through";
     item.style.fontStyle = "italic";
+    item.style.color = "#aaa";
   }
 };
 
